@@ -1,0 +1,15 @@
+{
+    "name": "Strong Password by Rahul Gavhar",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Generates Strong Password",
+    "icons":{
+        "16": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+    },
+    "action": {
+        "default_icon": "assets/icon.png",
+        "default_popup": "popup.html"
+    }
+}

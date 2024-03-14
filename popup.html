@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lock-logo-div">
+            <img src="./assets/icon.png" alt="lock-icon">
+        </div>
+
+        <section class="settings-container">
+            <div class="setting">
+                <label for="includeDigits">
+                    <span>Include digits</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="includeDigits" checked>
+            </div>
+            <div class="setting">
+                <label for="specialChar">
+                    <span>Include special characters</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="specialChar" checked>
+            </div>
+            <div class="setting">
+                <label for="letterMix">
+                    <span>Lowercase and uppercase letters</span>
+                    <span>note that lowercase letters will be used</span>
+                </label>
+                <input type="checkbox" id="letterMix" checked>
+            </div>
+        </section>
+        <section class="character-length">
+            <p>Your password will be <span id="charLengthSpan">15</span> characters long</p>
+            <p>move the slider to adjust the length of your password</p>
+            <input type="range" min="8" max="30" value="15" id="characterLengthSlider">
+        </section>
+
+        <section class="generated-password">
+            <input type="text" id="generatedPassword" spellcheck="false">
+            <button class="copy-password" id="copyPassword">copy</button>
+            <div class="confirmation" id="confirmation">
+                <p>copied to clipboard!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
